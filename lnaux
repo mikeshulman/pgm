@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm *.aux
+pdflatex pgm
+for f in *.tex; do ln -s pgm.aux ${f%.tex}.aux; done

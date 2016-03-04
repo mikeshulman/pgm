@@ -1,0 +1,19 @@
+\documentclass[12pt,oneside,openany]{book}
+\usepackage{fullpage}
+\input{macros}
+
+\usepackage{newclude}
+\def\inmaster{1}
+\ifdefined\subonly\includeonly{\subonly}\fi
+
+\title{A player's guide to mathematics}
+\author{Michael Shulman}
+
+\begin{document}
+
+\maketitle
+
+\include{exploring}
+\include{equality}
+
+\end{document}
